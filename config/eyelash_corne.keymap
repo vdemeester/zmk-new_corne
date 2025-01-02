@@ -33,14 +33,13 @@ td0: td0 {
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <&kp>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <1>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <0>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
 
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
