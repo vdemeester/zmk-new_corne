@@ -63,7 +63,7 @@ hm: homerow_mods {
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q           &kp W           &kp E             &kp R        &kp T                               &kp UP                &kp Y        &kp U        &kp I              &kp O              &kp P                    &kp BSPC
-&td0       &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_SHIFT L  &mt RIGHT_GUI SEMICOLON  &kp SQT
+&td0       &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_SHIFT D  &hm LCTRL F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hm RCTRL J  &hm RIGHT_SHIFT K  &hm RIGHT_SHIFT L  &hm RIGHT_GUI SEMICOLON  &kp SQT
 &kp LCTRL  &kp Z           &kp X           &kp C             &kp V        &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M        &kp COMMA          &kp DOT            &kp FSLH                 &kp ESC
                                            &kp LGUI          &mo 1        &lt 3 SPACE                                               &lt 3 ENTER  &mo 2        &kp RALT
             >;
