@@ -43,10 +43,20 @@
         };
     };
 
-    rgb_encoder: rgb_encoder {
+    rgb_bri_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+    };
+    rgb_hue_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+    };
+    rgb_sad_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
     };
 
     scroll_encoder: scroll_encoder {
@@ -81,7 +91,7 @@
                                          &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rgb_hue_encoder>;
         };
 
         raise_layer {
@@ -93,7 +103,7 @@
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rgb_sat_encoder>;
         };
 
         layer_3 {
