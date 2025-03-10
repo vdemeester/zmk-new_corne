@@ -42,9 +42,9 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
   - LGUI
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - '&lt2 BSPC'
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', h: Fn}
@@ -140,7 +140,7 @@ layers:
   - '}'
   - '|'
   - '~'
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
